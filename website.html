@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="large_screen.css">
+    <title>My Website</title>
+    <style>
+        .page {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .page.active {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Navigation active state */
+        #horizontal_navigation li.active h3 {
+            color: aqua;
+        }
+
+        #horizontal_navigation li.nav-item {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        #horizontal_navigation li.nav-item:hover h3 {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top_bar">
+        <p>Nick Cheddar;</p>
+
+        <ul id="horizontal_navigation">
+            <li class="nav-item active" data-page="home">
+                <h3>Home</h3>
+            </li>
+            <li class="nav-item" data-page="about">
+                <h3>About</h3>
+            </li>
+            <li class="nav-item" data-page="contact">
+                <h3>Contact_Info</h3>
+            </li>
+            <li>
+                <a href="https://github.com/cheddz123" target="_blank">
+                    <img src="./GitHub-Simbolo.png" alt="GitHub" class="github-nav-icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="rest_of_the_main_screen">
+        <div id="home" class="page active">
+            <img src="./headshot.png" class="headshot">
+            <img src="./Gradient.png" class="headshot_background">
+
+            <div class="typewriter-container">
+                <h1 class="intro-text">Hello! I Am <span class="highlight">Nick Cheddar</span></h1>
+
+                <div class="typewriter-wrapper">
+                    <span class="typewriter" id="typewriter-text"></span>
+                </div>
+
+                <p class="subtitle">
+                    Welcome to my portfolio.<br>
+                    I create digital experiences and express creativity through code and movement.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="contact" class="page">
+            <div class="contact-container">
+                <div class="contact-box">
+
+                    <div class="contact-icon">
+                        <img src="./headshot.png" class="headshot">
+                        <img src="./Gradient.png" class="headshot_background">
+                    </div>
+
+                    <div class="contact links">
+
+
+                        <div class="contact-info">
+                            <p>Phone: 724-304-1520</p>
+                            <p>Email: cheddz25@gmail.com</p>
+                        </div>
+
+
+
+                        <ul id="vertical_navigation_2">
+                            <li>
+                                <a href="./Nick_Cheddar.pdf" target="_blank">
+                                    <h3>Resume</h3>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/cheddz123" target="_blank">
+                                    <h3>Github</h3>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="about" class="page">
+            <div class="contact-container-two">
+                <div class="contact-box-two">
+                    <div class="contact-icon-two">
+                        <img src="./headshot.png" class="headshot">
+                        <img src="./Gradient.png" class="headshot_background">
+                    </div>
+                    <div class="about-description">
+
+                        <div class="description">
+                            <p> Hi there! My name is Nick Cheddar. I am an aspiring Web Developer and Game Developer
+                                currently pursuing my bachelors degree at the University of Pittsburgh. My goal is to
+                                make the world a better place! One line of code at a time ;</p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="skills-section">
+
+                    <div class="skills-header">
+                        <h2>Skills</h2>
+                    </div>
+
+                    <div class="skills-tabs">
+                        <button class="tab-button active" data-tab="tech-stack">Code Cavalcade</button>
+                        <button class="tab-button" data-tab="tools">Tools</button>
+                    </div>
+
+                    <div id="tech-stack" class="tab-content active">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon java">☕</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">Java</h3>
+                                    <p class="skill-level">Advanced</p>
+                                </div>
+                            </div>
+
+
+                            <div class="skill-card">
+                                <div class="skill-icon python">🐍</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">python</h3>
+                                    <p class="skill-level">intermediate</p>
+                                </div>
+                            </div>
+
+
+                            <div class="skill-card">
+                                <div class="skill-icon html">🌐</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">HTML</h3>
+                                    <p class="skill-level">intermediate</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon css">🎨</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">CSS</h3>
+                                    <p class="skill-level">Intermediate</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon javascript">JS</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">JavaScript</h3>
+                                    <p class="skill-level">Intermediate</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon c-lang">C</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">C</h3>
+                                    <p class="skill-level">Beginner</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon c-sharp">C#</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">C#</h3>
+                                    <p class="skill-level">Intermediate</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="tools" class="tab-content">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon slack">S</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">Slack</h3>
+                                    <p class="skill-level">Communications</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon git">G</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">Git</h3>
+                                    <p class="skill-level">Version Control</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon teams">T</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">Teams</h3>
+                                    <p class="skill-level">Communications</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon photoshop">P</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">Photoshop</h3>
+                                    <p class="skill-level">Digital Media Editing</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon github">G</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">GitHub</h3>
+                                    <p class="skill-level">Git Hosting</p>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon capcut">C</div>
+                                <div class="skill-info">
+                                    <h3 class="skill-name">CapCut</h3>
+                                    <p class="skill-level">Video Editing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+            // Typewriter effect
+            const texts = ["Web Developer", "Game Developer", "Dancer", "Creative Visionary"];
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typewriterActive = true;
+
+            function typeEffect() {
+                if (!typewriterActive) return;
+
+                const typewriterElement = document.getElementById('typewriter-text');
+                if (!typewriterElement) return;
+
+                const currentText = texts[textIndex];
+
+                if (isDeleting) {
+                    typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                let typeSpeed = isDeleting ? 75 : 150;
+
+                if (!isDeleting && charIndex === currentText.length) {
+                    typeSpeed = 2000; // Pause at end
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    typeSpeed = 500; // Pause before next text
+                }
+
+                setTimeout(typeEffect, typeSpeed);
+            }
+
+            // Page navigation function
+            function showPage(pageId) {
+                // Hide all pages
+                const pages = document.querySelectorAll('.page');
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                });
+
+                // Show selected page
+                const selectedPage = document.getElementById(pageId);
+                if (selectedPage) {
+                    selectedPage.classList.add('active');
+                }
+
+                // Update navigation active state
+                const navItems = document.querySelectorAll('.nav-item');
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                const activeNav = document.querySelector(`[data-page="${pageId}"]`);
+                if (activeNav) {
+                    activeNav.classList.add('active');
+                }
+
+                // Control typewriter effect (only on home page)
+                typewriterActive = pageId === 'home';
+                if (typewriterActive) {
+                    setTimeout(typeEffect, 100);
+                }
+            }
+
+            // Start everything when page loads
+            document.addEventListener('DOMContentLoaded', function () {
+                // Start typewriter effect
+                typeEffect();
+
+                // Add click listeners to navigation items
+                const navItems = document.querySelectorAll('.nav-item');
+                navItems.forEach(item => {
+                    item.addEventListener('click', function () {
+                        const pageId = this.getAttribute('data-page');
+                        showPage(pageId);
+                    });
+                });
+            });
+
+            // Add click listeners to tab buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const tabId = this.getAttribute('data-tab');
+
+                    // Remove active class from all buttons and contents
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        </script>
+</body>
+
+</html>

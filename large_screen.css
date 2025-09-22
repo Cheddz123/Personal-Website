@@ -1,0 +1,701 @@
+#top_bar {
+    /* Header */
+
+    position: absolute;
+    width: 100%;
+    height: 113px;
+    left: 0px;
+    top: 0px;
+
+    background: #1A0B2E;
+    box-shadow: 0px 6px 22px -3px rgba(0, 0, 0, 0.1);
+
+
+}
+
+#top_bar p {
+    position: absolute;
+    left: 50px;
+    top: 42px;
+
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: aqua;
+}
+
+
+#horizontal_navigation li:nth-child(1) {
+    position: absolute;
+    width: 66px;
+    height: 27px;
+    left: 650px;
+    top: 43px;
+
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+}
+
+#horizontal_navigation li:nth-child(2) {
+    position: absolute;
+    width: 100px;
+    height: 27px;
+    left: 800px;
+    top: 43px;
+
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+}
+
+#horizontal_navigation li:nth-child(3) {
+
+    position: absolute;
+    width: 120px;
+    height: 27px;
+    left: 950px;
+    top: 43px;
+
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+}
+
+#horizontal_navigation li:nth-child(4) {
+
+    position: absolute;
+    width: 120px;
+    height: 27px;
+    left: 1200px;
+    top: 43px;
+
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+}
+
+#horizontal_navigation li img {
+
+    width: 120px;
+    height: 45px;
+
+
+
+}
+
+
+#horizontal_navigation a {
+    text-decoration: none;
+    color: #FFFFFF;
+
+
+}
+
+#rest_of_the_main_screen {
+    background-color: #1A0B2E;
+    min-height: 100vh;
+    padding-top: 113px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* removes all default margins and padding */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1A0B2E;
+}
+
+
+.headshot_background {
+    /* Gradient */
+
+    position: absolute;
+    width: 385px;
+    height: 431px;
+    /* Calculate center: (viewport width - image width) / 2 */
+    left: calc(50vw - 192px);
+    /* 385px / 2 = 192px */
+    top: calc(50vh - 215px);
+    /* 431px / 2 = 215px */
+    background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+
+
+}
+
+.headshot {
+    position: absolute;
+    width: 300px;
+    /* Adjust size as needed */
+    height: 300px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.typewriter-container {
+    position: absolute;
+    text-align: center;
+    max-width: 800px;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    padding: 20px;
+    z-index: 3;
+}
+
+.intro-text {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: aqua;
+}
+
+.highlight {
+    color: aqua;
+}
+
+.typewriter-wrapper {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.typewriter {
+    font-size: 36px;
+    font-weight: 600;
+    color: gold;
+    border-right: 3px solid #8B5CF6;
+    padding-right: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    min-height: 1.2em;
+    display: inline-block;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.subtitle {
+    font-size: 20px;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Add this CSS to your existing styles */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 113px);
+    /* Full height minus the top bar */
+    padding: 20px;
+}
+
+
+.contact-box {
+    width: 900px;
+    height: 500px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 2px solid rgba(139, 92, 246, 0.5);
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    /* Keep vertical centering */
+    justify-content: space-between;
+    /* Space items apart instead of centering */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Remove text-align: center */
+}
+
+.contact-box:hover {
+    border-color: aqua;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.contact-icon {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    margin-right: 50px;
+    /* Space between portrait and navigation */
+}
+
+.contact-icon .headshot_background {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    /* Override the centering from your main CSS */
+    transform: none;
+}
+
+.contact-icon .headshot {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 25px;
+    top: 25px;
+    border-radius: 50%;
+    z-index: 2;
+    /* Override the centering from your main CSS */
+    transform: none;
+}
+
+/* Update contact box to use flexbox layout */
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align items to the left */
+    gap: 50px;
+    /* Space between elements */
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-info p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+.contact-container-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 380px);
+    /* Full height minus the top bar */
+    padding: 20px;
+}
+
+.contact-box-two {
+    width: 700px;
+    height: 300px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 2px solid rgba(139, 92, 246, 0.5);
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    /* Keep vertical centering */
+    justify-content: space-between;
+    /* Space items apart instead of centering */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Remove text-align: center */
+}
+
+.contact-box-two:hover {
+    border-color: aqua;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.contact-icon-two {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    margin-right: 50px;
+    /* Space between portrait and navigation */
+}
+
+.contact-icon-two .headshot_background {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    /* Override the centering from your main CSS */
+    transform: none;
+}
+
+
+.contact-icon-two .headshot {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 25px;
+    top: 25px;
+    border-radius: 50%;
+    z-index: 2;
+    /* Override the centering from your main CSS */
+    transform: none;
+}
+
+.contact-box-two {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align items to the left */
+    gap: 50px;
+    /* Space between elements */
+}
+
+.about-description {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.description p {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: left;
+}
+
+.contact-container-two {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+}
+
+.skills-section {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.skills-section {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.skills-header h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+    padding: 0 300px;
+    position: relative;
+}
+
+.skills-header h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    padding: 0 315px;
+    background: aqua;
+}
+
+.skills-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 30px;
+    padding: 0 250px;
+}
+
+.tab-button {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.tab-button:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.tab-button:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+}
+
+.tab-button.active {
+    background: aqua;
+    color: #1A0B2E;
+    border-color: aqua;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    color:#f7df1e;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    border-color: aqua;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.1);
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.skill-icon.java { background: #f89820; color: white; }
+.skill-icon.python { background: #3776ab; color: white; }
+.skill-icon.html { background: #e34c26; color: white; }
+.skill-icon.css { background: #1572b6; color: white; }
+.skill-icon.javascript { background: #f7df1e; color: #1A0B2E; }
+.skill-icon.c-lang { background: #00599c; color: white; }
+.skill-icon.c-sharp { background: black; color: white; }
+
+.skill-info {
+    width: 100%;
+}
+
+.skill-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 5px 0;
+}
+
+.skill-level{
+    color:crimson;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+}
+
+#tools {
+    display: none;
+}
+
+#tools.active {
+    display: block;
+}
+
+.skill-icon.slack { background: #4A154B; color: white; }
+.skill-icon.git { background: #F05032; color: white; }
+.skill-icon.teams { background: #6264A7; color: white; }
+.skill-icon.photoshop { background: #31A8FF; color: white; }
+.skill-icon.github { background: #181717; color: white; }
+.skill-icon.capcut { background: #FF6B35; color: white; }
+
+
+#vertical_navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+    /* Align all items to the left */
+}
+
+
+#vertical_navigation_2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+    /* Align all items to the left */
+}
+
+#vertical_navigation_2 li {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-align: left;
+    /* Ensure individual items are left-aligned */
+}
+
+#vertical_navigation_2 li a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#vertical_navigation_2 li a h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: yellow;
+    text-decoration: inherit;
+    text-align: left;
+}
+
+#vertical_navigation_2 li h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: yellow;
+    text-decoration: inherit;
+    text-align: left;
+    /* Make sure h3 elements are left-aligned too */
+}
+
+#vertical_navigation_2 li:hover {
+    color: aqua;
+    transform: translateX(5px);
+    /* Keep only the underline styling */
+    text-decoration: underline;
+}
+
+#vertical_navigation_2 li.active {
+    color: aqua;
+    /* Keep only the underline styling */
+    text-decoration: underline;
+}
+
+.contact.links {
+    flex-shrink: 0;
+    margin-left: auto;
+    /* Pushes it all the way to the right */
+    margin-right: 150px;
+    /* Adds extra space from the center */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-box {
+        width: 400px;
+        height: 400px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-box {
+        width: 90%;
+        height: 350px;
+        padding: 20px;
+    }
+}
